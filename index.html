@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Пример JavaScript Message- alert, prompt, confirm</title>
+</head>
+
+<body>
+    <h1>Пример JavaScript - Вывод данных</h1>
+    
+    <hr>
+    
+    <script>
+        //print message to document
+        document.write('<h2 style="COLOR:red;">Hello, World!</h2>');
+        //--------------
+        alert('Hello, JavaScript!');
+        //--------------Answer
+        var answer;//user answer - controll
+        answer= prompt('Your favorite number', 7);
+        if(answer==null || answer=='') {
+            //Cancel or null and ok
+            document.write('<p> Not number!</p>');
+        }else{
+            document.write('<p> GOOD JOB, MATE! IT IS '+answer+'!</p>');
+        }
+        //--------------Confirm
+        var AnswerUser;
+        AnswerUser=confirm('Link - ok, cancel - stop');
+
+        if(AnswerUser){//ok true
+            document.write('Link: <a href="https://kutsehariduskeskus.ee">IVKHK</a>');
+        }else{
+            document.write('<p> Thanks, no Link!');
+        }
+
+
+
+    </script>
+</body>
+
+</html>
